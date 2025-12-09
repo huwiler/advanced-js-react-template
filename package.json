@@ -1,0 +1,8 @@
+
+{
+  "private": true,
+  "name": "advanced-js-react-course-root",
+  "description": "Do NOT install dependencies at the root level. Install inside website/ or mobile/ directories only.",
+  "scripts": {},
+  "license": "UNLICENSED"
+}

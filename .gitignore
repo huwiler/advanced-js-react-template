@@ -1,0 +1,68 @@
+# ----------------------------------------
+# Root-level ignores
+# ----------------------------------------
+
+node_modules/
+dist/
+build/
+.tmp/
+.cache/
+
+.env
+.env.local
+.env.*.local
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.vscode/
+.idea/
+*.swp
+
+# ----------------------------------------
+# Vite Website Project
+# ----------------------------------------
+
+website/node_modules/
+website/dist/
+website/.vite/
+website/.cache/
+website/.eslintcache
+
+website/.env
+website/.env.local
+website/.env.*.local
+
+website/uploads/
+website/.temp/
+
+# ----------------------------------------
+# Mobile (Expo / React Native)
+# ----------------------------------------
+
+mobile/node_modules/
+mobile/.expo/
+mobile/.expo-shared/
+mobile/web-build/
+mobile/.expo-settings.json
+mobile/.packager-info.json
+mobile/.metro-cache/
+mobile/.cache/
+
+# Expo build artifacts.  Very important not to commit these.
+mobile/ios/
+mobile/android/
+
+# Expo credentials
+mobile/credentials.json
+
+# Coverage
+coverage/
+*.tsbuildinfo
