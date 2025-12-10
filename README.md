@@ -34,20 +34,23 @@ root/
 After cloning, you will create a brand-new GitHub repo that belongs to you.
 
 ```bash
-git clone <TEMPLATE_URL> my-project
+git clone https://github.com/huwiler/advanced-js-react-template.git my-project
 cd my-project
 
 # remove template remote
 git remote remove origin
 
+# Go to GitHub website -> New Repository -> name it -> Create.  This gives you the
+# HTTPS URL to your repo, which you will need for the next step.
+
 # add your own new GitHub repo
-git remote add origin <YOUR_NEW_REPO_URL>
+git remote add origin <YOUR_NEW_REPO_HTTPS_URL>
 git push -u origin main
 ```
 
 ---
 
-## 🧩 Setting up your Website project (Weeks 1–3)
+## Setting up your Website project (Weeks 1–3)
 
 Inside `website/`:
 
@@ -62,7 +65,7 @@ You will build your marketing site here.
 
 ---
 
-## 📱 Setting up your Mobile App (Weeks 4–7)
+## Setting up your Mobile App (Weeks 4–7)
 
 Inside `mobile/`:
 
@@ -77,7 +80,7 @@ You will build your React Native mobile app here.
 
 ---
 
-## 🌐 Deploying Your Website to Starfruit
+## Deploying Your Website to Starfruit
 
 Later in the course, you’ll write a script to:
 
@@ -88,7 +91,7 @@ Deployment examples will be provided during the course.
 
 ---
 
-## ❗ Important Rules
+## Important Rules
 
 ### 1. **Do not install dependencies at the root of the repository.**
 Always install inside:
@@ -104,7 +107,7 @@ Consistency is part of your grade.
 
 ---
 
-## 🧪 Optional Enhancements
+## Optional Enhancements
 
 As you progress, you may:
 
@@ -115,7 +118,7 @@ As you progress, you may:
 
 ---
 
-## 🎉 Have fun and build something great!
+## Have fun and build something great!
 
 This repo will evolve with you throughout the course.  
 If you have questions, please ask early — small issues get big fast in React projects.
