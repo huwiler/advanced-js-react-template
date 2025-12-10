@@ -43,6 +43,8 @@ git config --global init.defaultBranch main
   - Easiest: run `gh auth login` and follow the prompts (select HTTPS and “Login with a web browser”). Install GitHub CLI if needed: macOS `brew install gh`, Windows `winget install GitHub.cli`, Ubuntu `sudo apt install gh`.
   - Alternatively, on your first `git push`, use the browser prompt. If asked for a password in terminal, paste a Personal Access Token instead of your GitHub password.
 
+Optional: If you prefer a more visual, user-friendly interface for managing your GitHub repository, you may want to install GitHub Desktop https://desktop.github.com/download/. It works seamlessly with repos you clone on the command line.
+
 ### 1. Create your own personal repository
 
 **Do not work in the class template directly.**  

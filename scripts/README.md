@@ -1,4 +1,14 @@
 
 # Scripts
-Place build/deployment scripts here.
+This folder is for build and deployment scripts that support your project.
 
+You are encouraged to use an AI coding assistant (e.g. Codex, Gemini Code Assist, Claude Code, Cursor, or GitHub Copilot) to help generate scripts tailored to your operating system, your shell, and your deployment environment.
+
+Example: Creating a Website Publish Script
+
+Once you have your Vite website running locally, you can create a script to build and deploy it.
+Here’s an example prompt you might provide to your AI assistant:
+
+"Create a website publish script script/publish_website that does the following: (a) builds vite site by running npm run build in website/, (b) deploys to <starfruit username>@starfruit.champlain.edu:/home/<starfruit username>/public_html/ using the ssh key located at <path to starfruit ssh key>".
+
+Feel free to adapt this prompt to your environment (Windows, macOS, or Linux) and your preferred scripting language (Bash, PowerShell, or others).
