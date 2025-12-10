@@ -5,20 +5,19 @@ Welcome to **Advanced JavaScript with React** at Champlain College!
 This repository serves as your **project foundation** for the entire course.  
 Throughout Weeks 1–7, you will build two related deliverables:
 
-1. **A marketing website** (Vite + React)  
+1. **A marketing website for your app** (Vite + React)  
 2. **A mobile app** (React Native + Expo)  
 
 Both projects will live inside this single repository, mirroring modern **monorepo** workflows used in industry.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 root/
 ├── website/   → Your Vite-based marketing site (Weeks 1–3)
 ├── mobile/    → Your Expo mobile app (Weeks 4–7)
-├── assets/    → Shared images, icons, logos (optional)
 ├── scripts/   → Deployment or utility scripts created later
 ├── README.md  → You are here
 ├── .gitignore → Preconfigured to avoid common issues
@@ -27,7 +26,7 @@ root/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Create your own personal repository
 
