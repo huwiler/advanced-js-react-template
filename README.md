@@ -28,6 +28,21 @@ root/
 
 ## Getting Started
 
+### Before you start: Git setup
+
+- Confirm Git is installed: `git --version` (install Xcode Command Line Tools on macOS with `xcode-select --install`, or Git for Windows from git-scm.com if missing).
+- Configure your identity so commits are attributed correctly:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --global init.defaultBranch main
+```
+
+- Sign in before your first push. GitHub no longer accepts account passwords over HTTPS—use a browser-based login or token:
+  - Easiest: run `gh auth login` and follow the prompts (select HTTPS and “Login with a web browser”). Install GitHub CLI if needed: macOS `brew install gh`, Windows `winget install GitHub.cli`, Ubuntu `sudo apt install gh`.
+  - Alternatively, on your first `git push`, use the browser prompt. If asked for a password in terminal, paste a Personal Access Token instead of your GitHub password.
+
 ### 1. Create your own personal repository
 
 **Do not work in the class template directly.**  
@@ -40,7 +55,7 @@ cd my-project
 # remove template remote
 git remote remove origin
 
-# Go to GitHub website -> New Repository -> name it -> Create.  This gives you the
+# Go to GitHub website -> New Repository -> name it (Do NOT initialize with README or gitignore) -> Create.  This gives you the
 # HTTPS URL to your repo, which you will need for the next step.
 
 # add your own new GitHub repo
@@ -48,46 +63,32 @@ git remote add origin <YOUR_NEW_REPO_HTTPS_URL>
 git push -u origin main
 ```
 
+### Install Node.js and npm
+
+Install the current LTS release (npm comes with Node):
+
+- macOS: `brew install node` (or use the installer from nodejs.org if you don’t use Homebrew).
+- Windows: `winget install OpenJS.NodeJS.LTS` (or grab the LTS installer from nodejs.org).
+- Linux (Debian/Ubuntu): `sudo apt update && sudo apt install -y nodejs npm` (or use nvm/nodesource for newer versions).
+
+Verify your setup:
+
+```bash
+node -v
+npm -v
+```
+
 ---
 
 ## Setting up your Website project (Weeks 1–3)
 
-Inside `website/`:
-
-```bash
-cd website
-npm create vite@latest .
-npm install
-npm run dev
-```
-
-You will build your marketing site here.
+See /website/README.md
 
 ---
 
-## Setting up your Mobile App (Weeks 4–7)
+## Setting up your mobile app (Weeks 4-7)
 
-Inside `mobile/`:
-
-```bash
-cd mobile
-npx create-expo-app .
-npm install
-npm run start
-```
-
-You will build your React Native mobile app here.
-
----
-
-## Deploying Your Website to Starfruit
-
-Later in the course, you’ll write a script to:
-
-1. Build your website (`npm run build`)
-2. Upload the result to your Starfruit `public_html` using `rsync`
-
-Deployment examples will be provided during the course.
+See /mobile/README.md
 
 ---
 

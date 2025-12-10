@@ -14,4 +14,4 @@ npm run start
 ## Notes
 
 - Do not run `npm install` at the repo root
-- Do not commit build folders (`ios/build`, `android/app/build`, etc.).  As long as you 
+- Do not commit build folders (`ios/build`, `android/app/build`, etc.).
