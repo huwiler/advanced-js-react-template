@@ -84,6 +84,8 @@ node -v
 npm -v
 ```
 
+Check to be sure you have a version of Node that is 20.19 or newer.  This is required for this course.
+
 ---
 
 ## Setting up your Website project (Weeks 1–3)
