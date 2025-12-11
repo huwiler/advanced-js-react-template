@@ -28,6 +28,12 @@ Select a variant: › JavaScript
 Select "No" when asked to use rolldown-vite
 ```
 
+This starts the automatically installs and starts vite server.  Stop the server for now by holding Control and pressing C.
+
+```
+CTRL^C
+```
+
 Install dependencies:
 
 ```bash
@@ -63,7 +69,10 @@ You can now use Bootstrap classes and JavaScript components.
 npm run dev
 ```
 
-Visit the local server URL Vite prints out.
+This starts a local dev server (default: http://localhost:5173). Open that URL to see the Vite placeholder page render in the browser.
+
+- Stop the server: press `Ctrl+C` in the terminal running Vite.
+- Start it again (from `website/`): `npm run dev`
 
 ---
 
@@ -99,3 +108,7 @@ You will later write a deployment script that uploads this folder to your person
 - Never install dependencies at the root of the repository  
 - Always run commands inside `website/`  
 - Do not commit `dist/`  
+
+## Deployment
+
+When you are ready to deploy changes to starfruit, read scripts/README.md to learn how AI can assist in automating the deployment process.
