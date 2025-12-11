@@ -84,7 +84,14 @@ node -v
 npm -v
 ```
 
-Check to be sure you have a version of Node that is 20.19 or newer.  This is required for this course.
+Check to be sure you have a version of Node that is 20.19 or newer.  This is required for this course.  
+If your is older than version 20.19, uninstall and re-install with NVM:
+https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating.  
+Use AI to assist in completing this on your platform if needed.
+
+```bash
+nvm install node
+```
 
 ---
 
