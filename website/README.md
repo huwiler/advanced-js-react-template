@@ -105,6 +105,15 @@ You will later write a deployment script that uploads this folder to your person
 
 ## Important Notes
 
+- In order for your react site to work on starfruit, make the following change to website/vite.config.js:
+
+```
+export default defineConfig({
+    base: '/~your-username/', // <-- Add this line substiting your username
+    plugins: [react()],
+})
+```
+
 - Never install dependencies at the root of the repository  
 - Always run commands inside `website/`  
 - Do not commit `dist/`  
