@@ -1,19 +1,16 @@
-# Website Project (Vite + Bootstrap — No React)
+# Website Project (Vite + React + Bootstrap)
 
-This folder contains your **marketing website** for Advanced JavaScript with React.
+This folder contains your **React marketing website** for Advanced JavaScript with React.
 
-For the website portion (Weeks 1–3), we will **not** use React.  
-Instead, you'll build a modern JavaScript website using:
+For the website portion (Weeks 1–3), you'll build a modern React site using:
 
 - **Vite** (for fast bundling & dev server)
-- **Bootstrap 5** (for layout & UI)
-- **Modular ES6 JavaScript**
-
-This mirrors *real-world static site development* and keeps the React learning focused on the **mobile app**.
+- **React** (for UI)
+- **Bootstrap 5** (for layout & UI helpers)
 
 ---
 
-## Step 1 — Create your Vite project (Vanilla JS template)
+## Step 1 — Create your Vite project (React template)
 
 From the root of your repo:
 
@@ -25,8 +22,10 @@ npm create vite@latest .
 Choose:
 
 ```
-✔ Select a framework: › Vanilla
-✔ Select a variant: › JavaScript
+Select "Ignore files and continue" to keep your README.md in the website directory.
+Select a framework: › React
+Select a variant: › JavaScript
+Select "No" when asked to use rolldown-vite
 ```
 
 Install dependencies:
@@ -45,9 +44,9 @@ npm install bootstrap
 
 ---
 
-## Step 3 — Import Bootstrap into your main JavaScript file
+## Step 3 — Import Bootstrap into your main entry file
 
-Open `src/main.js` and add:
+Open `src/main.jsx` and add:
 
 ```js
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -86,13 +85,12 @@ You will later write a deployment script that uploads this folder to your person
 
 ---
 
-## Why no React on the website?
+## Why React on the website?
 
-- The website is a **static marketing site**, not a dynamic web app  
-- Vite + Bootstrap gives you a fast, modern developer experience  
-- You learn modular JavaScript without React abstractions  
-- React knowledge is saved for the **mobile app**, where it matters most  
-- You practice deploying a built static site — exactly how it works in industry  
+- Reinforces React fundamentals before the mobile app  
+- Reuses familiar patterns between web and mobile  
+- Keeps the toolchain modern and fast with Vite  
+- Lets you practice production builds and deployments with React  
 
 ---
 

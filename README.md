@@ -60,7 +60,7 @@ git remote remove origin
 # Go to GitHub website -> New Repository -> name it (Do NOT initialize with README or gitignore) -> Create.
 # HTTPS URL to your repo, which you will need for the next step.
 # After creating the repo, add the instructor as a collaborator so they can access your work:
-# Settings -> Collaborators and teams -> Add collaborator -> huwiler (pick Matt Huwiler from the list; my profile pic is of me standing on top of camels hump in a winter storm)
+# Settings -> Collaborators and teams -> Add collaborator -> huwilerm@champlain.edu
 
 # add your own new GitHub repo
 git remote add origin <YOUR_NEW_REPO_HTTPS_URL>.git
@@ -107,7 +107,7 @@ Always install inside:
 - `mobile/`
 
 ### 2. **Do not commit `node_modules` or build artifacts.**
-This repo includes a `.gitignore` tailored for Vite + Expo.
+This repo includes a `.gitignore` tailored for NPM + Vite + Expo.
 
 ### 3. **Keep your repo clean and organized.**
 Consistency is part of your grade.
