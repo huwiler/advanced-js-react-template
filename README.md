@@ -65,6 +65,8 @@ git remote remove origin
 # add your own new GitHub repo
 git remote add origin <YOUR_NEW_REPO_HTTPS_URL>.git
 git push -u origin main
+git tag -a week-0 -m "Initial setup"
+git push --tags
 ```
 
 ### Install Node.js and npm
