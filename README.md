@@ -59,6 +59,8 @@ git remote remove origin
 
 # Go to GitHub website -> New Repository -> name it (Do NOT initialize with README or gitignore) -> Create.  This gives you the
 # HTTPS URL to your repo, which you will need for the next step.
+# After creating the repo, add the instructor as a collaborator so they can access your work:
+# Settings -> Collaborators and teams -> Add collaborator -> huwilerm@champlain.edu
 
 # add your own new GitHub repo
 git remote add origin <YOUR_NEW_REPO_HTTPS_URL>
@@ -110,20 +112,9 @@ Consistency is part of your grade.
 
 ---
 
-## Optional Enhancements
-
-As you progress, you may:
-
-- Add a shared component library
-- Add a shared assets folder
-- Add deployment scripts in `/scripts`
-- Apply industry patterns such as monorepo organization
-
----
-
 ## Have fun and build something great!
 
 This repo will evolve with you throughout the course.  
-If you have questions, please ask early — small issues get big fast in React projects.
+If you have questions, please ask early.  Small issues get big fast in React projects.
 
 Good luck, and welcome to **Advanced JavaScript with React**!
