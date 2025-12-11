@@ -30,7 +30,7 @@ root/
 
 ### Before you start: Git setup
 
-- Confirm Git is installed: `git --version` (install Xcode Command Line Tools on macOS with `xcode-select --install`, or Git for Windows from git-scm.com if missing).
+- Confirm Git is installed: `git --version` 
 - Configure your identity so commits are attributed correctly:
 
 ```bash
@@ -40,10 +40,10 @@ git config --global init.defaultBranch main
 ```
 
 - Sign in before your first push. GitHub no longer accepts account passwords over HTTPS—use a browser-based login or token:
-  - Easiest: run `gh auth login` and follow the prompts (select HTTPS and “Login with a web browser”). Install GitHub CLI if needed: macOS `brew install gh`, Windows `winget install GitHub.cli`, Ubuntu `sudo apt install gh`.
+  - Easiest: run `gh auth login` and follow the prompts (select HTTPS and “Login with a web browser”). Install GitHub CLI if needed: macOS `brew install gh`, Windows `winget install GitHub.cli`, Ubuntu `sudo apt install gh`.  Choose "GitHub.com" when it asks you what account to sign into and HTTPS for preferred protocol.  Follow the on-screen isntructions to authorize your computer to make changes to your git repos.
   - Alternatively, on your first `git push`, use the browser prompt. If asked for a password in terminal, paste a Personal Access Token instead of your GitHub password.
 
-Optional: If you prefer a more visual, user-friendly interface for managing your GitHub repository, you may want to install GitHub Desktop https://desktop.github.com/download/. It works seamlessly with repos you clone on the command line.
+Optional: If you prefer a more visual, user-friendly interface for managing your GitHub repository, you may want to install GitHub Desktop https://desktop.github.com/download/. It works seamlessly with repos you clone on the command line.  Additionally it automatically takes care of staging files that have changed since your last commit, so you don't have to think about doing this manually.
 
 ### 1. Create your own personal repository
 
