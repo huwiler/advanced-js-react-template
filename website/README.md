@@ -1,4 +1,4 @@
-# Website Project (Vite + React + Bootstrap)
+# Website Project (Vite + React + Bootstrap or Tailwind)
 
 This folder contains your **React marketing website** for Advanced JavaScript with React.
 
@@ -6,7 +6,7 @@ For the website portion (Weeks 1–3), you'll build a modern React site using:
 
 - **Vite** (for fast bundling & dev server)
 - **React** (for UI)
-- **Bootstrap 5** (for layout & UI helpers)
+- **Bootstrap 5 or Tailwind CSS** (for layout & UI helpers)
 
 ---
 
@@ -42,15 +42,20 @@ npm install
 
 ---
 
-## Step 2 — Install Bootstrap
+## Step 2 — Choose your CSS framework
+The lecture notes and examples use Bootstrap, but you are welcome to use Tailwind CSS if you prefer. Tailwind is more common with React sites but Bootstrap is what's taught throughout Champlain's web development courses.
+
+Pick one of the options below.
+
+### Option A — Bootstrap (recommended for course alignment)
+
+Install Bootstrap:
 
 ```bash
 npm install bootstrap
 ```
 
----
-
-## Step 3 — Import Bootstrap into your main entry file
+Import Bootstrap into your main entry file:
 
 Open `src/main.jsx` and add:
 
@@ -63,7 +68,50 @@ You can now use Bootstrap classes and JavaScript components.
 
 ---
 
-## Step 4 — Run the development server
+### Option B — Tailwind CSS (popular in React projects)
+
+Install Tailwind and its build tools:
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+Configure Tailwind to scan your files:
+
+Open `tailwind.config.js` and set:
+
+```js
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+Add Tailwind directives to your main stylesheet:
+
+Open `src/index.css` and replace its contents with:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Make sure `src/main.jsx` imports the stylesheet:
+
+```js
+import './index.css';
+```
+
+You can now use Tailwind utility classes in your components.
+
+---
+
+## Step 3 — Run the development server
 
 ```bash
 npm run dev
@@ -76,7 +124,7 @@ This starts a local dev server (default: http://localhost:5173). Open that URL t
 
 ---
 
-## Step 5 — Build for production (important!)
+## Step 4 — Build for production (important!)
 
 This is how you create deployable files for Starfruit:
 
@@ -115,8 +163,8 @@ export default defineConfig({
 ```
 
 - Never install dependencies at the root of the repository  
-- Always run commands inside `website/`  
-- Do not commit `dist/`  
+- Always run commands inside `website/`.  
+- Do not commit `dist/`. 
 
 ## Deployment
 
