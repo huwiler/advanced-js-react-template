@@ -1,0 +1,43 @@
+{
+  "cli": {
+    "appVersionSource": "local",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "developmentClient": true,
+      "credentialsSource": "remote",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": false
+      }
+    },
+    "development-simulator": {
+      "distribution": "internal",
+      "developmentClient": true,
+      "credentialsSource": "remote",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "channel": "preview",
+      "credentialsSource": "remote"
+    },
+    "production": {
+      "autoIncrement": true,
+      "channel": "production",
+      "credentialsSource": "remote",
+      "ios": {
+        "simulator": false
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
